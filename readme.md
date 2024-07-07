@@ -8,4 +8,7 @@
 7.Moving icons
 8.Using Multiple pages
 
-##Github Link
+##Github Link & Live Link
+
+//https://github.com/aditya379/Student-Registration
+//https://aditya379.github.io/Student-Registration/

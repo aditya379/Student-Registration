@@ -49,7 +49,8 @@ label {
     color: white;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"] {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;

@@ -15,6 +15,7 @@ if (index !== null) {
     if (index >= 0 && index < data.length) {
         // Populate form with existing data
         document.querySelector("#name").value = data[index].name;
+        document.querySelector("#email").value = data[index].email;
         document.querySelector("#id").value = data[index].id;
         document.querySelector("#class").value = data[index].class;
         document.querySelector("#roll").value = data[index].roll;
@@ -31,18 +32,23 @@ document.querySelector("#editForm").addEventListener("submit", function(event) {
 
     // Get updated values
     let name = document.querySelector("#name").value;
+    let email = document.querySelector("#email").value;
     let id = document.querySelector("#id").value;
     let classs = document.querySelector("#class").value;
     let roll = document.querySelector("#roll").value;
 
     // Validate input fields
-    if (name === "" || id === "" || classs === "" || roll === "") {
+    if (name === "" || email === "" || id === "" || classs === "" || roll === "") {
         alert("Please fill all the fields");
         return;
     } else if (name.length < 3 || /\d/.test(name)) {
         alert("Name must be at least 3 characters and cannot contain numbers");
         return;
-    } else if (id.length < 1) {
+    } else if (email.length < 3 || !/\S+@\S+\.\S+/.test(email)) {
+        alert("Email must be at least 3 character and must be valid");
+        return;
+    }
+    else if (id.length < 1) {
         alert("ID must be at least 1 character");
         return;
     } else if (classs.length < 1 || /\D/.test(classs)) {
@@ -54,7 +60,7 @@ document.querySelector("#editForm").addEventListener("submit", function(event) {
     }
 
     // Update data
-    data[index] = { name, id, class: classs, roll };
+    data[index] = { name,email, id, class: classs, roll };
 
     // Save updated data back to local storage
     localStorage.setItem("formData", JSON.stringify(data));

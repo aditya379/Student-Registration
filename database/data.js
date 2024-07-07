@@ -11,6 +11,7 @@ function displayData() {
 
     row.innerHTML = `
             <td>${entry.name}</td>
+            <td>${entry.email}</td>
             <td>${entry.id}</td>
             <td>${entry.class}</td>
             <td>${entry.roll}</td>
