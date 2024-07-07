@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1e30c8571a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Task-Manager</title>
+  </head>
+  <body>
+    <!-- Enter Details -->
+    <section class="main-task">
+      <div class="task">
+        <h1 class="heading">Student Registration Form</h1>
+        <form action="#" class="task-input">
+          <label for="name" id="nameLabel">Student Name</label>
+          <input type="text" placeholder="Student Name" id="name" />
+          <label for="id" id="idLabel">Student ID</label>
+          <input type="text" placeholder="Student ID" id="id" />
+          <label for="class" id="classLabel">Class</label>
+          <input type="text" placeholder="Class" id="class" />
+          <label for="roll" id="rollLabel">Roll No</label>
+          <input type="text" placeholder="Roll No" id="roll" />
+          <button type="submit" id="add" onclick="collect()">Add</button>
+        </form>
+        <div class="task-options">
+          <div class="taskcount">
+            <span id="taskcount"></span>
+            <lord-icon
+    src="https://cdn.lordicon.com/iazmohzf.json"
+    trigger="loop"
+    delay="2000"
+    colors="primary:#ffffff"
+    style="width:30px;height:30px">
+</lord-icon>
+          </div>
+          <div class="taskview">
+            <a href="database/data.html">
+              <lord-icon
+                src="https://cdn.lordicon.com/fmjvulyw.json"
+                trigger="loop"
+                delay="2000"
+                style="width: 30px; height: 30px"
+                >
+              </lord-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

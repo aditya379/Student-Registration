@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+        background: url(../assets/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+       backdrop-filter: blur(10px);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 30px;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+#table{
+    width: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.381);
+}
+
+#tbody a{
+    text-decoration: none;
+    color: white;
+    }
+
+.back{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+lord-icon{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 20px;
+    }
+
+    #table{
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .back{
+        font-size: 20px;
+    }
+
+    #tbody a{
+        font-size: 14px;
+    }
+
+}
